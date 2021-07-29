@@ -7,45 +7,41 @@
 
 import SwiftUI
 
+
 struct MovieDetailView: View {
-    @State var index = 0
+    let item: MovieModel
+    @Binding var isPresented: Bool
+    
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false, content: {
-            LazyVStack(alignment: .leading, spacing: 6){
+        ZStack(alignment: .topLeading){
+            Color(.gray).edgesIgnoringSafeArea(.bottom)
+            VStack{
                 
-                HStack{
-                
-                    TabView(selection: self.$index){
-                        ForEach(0...4,id: \.self){ idx in
-                            
-                            VStack{
+                Image(systemName: "xmark")
+                    .font(.title)
+                    .onTapGesture {
+                        isPresented = false
                         
-                                AsyncImage(url: URL(string: basePath+movieData[idx].poster)!, placeholder: {Color.black}, image: { image in
-                                    Image(uiImage: image)
-                                        .resizable()
-                                    
-                                })
-                                .frame(height: self.index == index ? 480:180)
-                                .tag(index)
-                                
-                            }
-                        }
                     }
-                    .frame(width: getRec().width, height: 480, alignment: .center)
-                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                    .animation(.linear)
-                                
-                }
                 
+               
+                VStack(alignment: .center){
+                    Text(item.name)
+                }
+               
             }
-        }).ignoresSafeArea(edges: .top)
+           
+            
+        }
+        Spacer()
+    
+
     }
 }
-
-
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView()
+//        MovieDetailView(item: MovieModel.init(id: 0, name: "Gondes", poster: ""), isPresented: .constant(false))
+        Home()
+        
     }
-    
 }

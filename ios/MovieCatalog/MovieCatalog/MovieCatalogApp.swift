@@ -11,20 +11,22 @@ import SwiftUI
 struct MovieCatalogApp: App {
     var body: some Scene {
         WindowGroup {
+            Home()
 //            MovieDetailView()
-            
-            TabView{
-                Home()
-                    .tabItem {
-                        Label("Home", systemImage: "house")
-
-                    }
-                ContentView()
-                    .tabItem {
-                        Label("Other", systemImage: "sunrise")
-                    }
-            }
+//            PeopleView()
+//            TabView{
+//                Home()
+//                    .tabItem {
+//                        Label("Home", systemImage: "house")
+//
+//                    }
+//                ContentView()
+//                    .tabItem {
+//                        Label("Other", systemImage: "sunrise")
+//                    }
+//            }
             
         }
     }
 }
+

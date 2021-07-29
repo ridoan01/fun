@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D041B1A326A092B80035D2A4 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041B1A226A092B80035D2A4 /* PeopleView.swift */; };
 		D04F56A0269B6E410004F323 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F569F269B6E410004F323 /* MovieDetailView.swift */; };
 		D04F56A4269B754B0004F323 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F56A3269B754B0004F323 /* MovieModel.swift */; };
 		D0777B4C26988C6B005A60D2 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = D0777B4B26988C6B005A60D2 /* SwURL */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D041B1A226A092B80035D2A4 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		D04F569F269B6E410004F323 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		D04F56A3269B754B0004F323 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		D0AC6C0B269BE6800071E45D /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				D0BD25EC26960F6900739AF9 /* Home.swift */,
 				D04F569F269B6E410004F323 /* MovieDetailView.swift */,
+				D041B1A226A092B80035D2A4 /* PeopleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0AC6C10269BE6FF0071E45D /* ImageCache.swift in Sources */,
+				D041B1A326A092B80035D2A4 /* PeopleView.swift in Sources */,
 				D0BD25C326960F1800739AF9 /* ContentView.swift in Sources */,
 				D0AC6C0C269BE6800071E45D /* AsyncImage.swift in Sources */,
 				D0AC6C0E269BE6C10071E45D /* ImageLoader.swift in Sources */,
