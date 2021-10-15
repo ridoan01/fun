@@ -112,6 +112,31 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		D074ACF92705A9F90015A52B /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				D074ACFB2705AA160015A52B /* Movie Detail */,
+				D074ACFA2705AA0A0015A52B /* Home */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		D074ACFA2705AA0A0015A52B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D0BD25EC26960F6900739AF9 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D074ACFB2705AA160015A52B /* Movie Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D04F569F269B6E410004F323 /* MovieDetailView.swift */,
+			);
+			path = "Movie Detail";
+			sourceTree = "<group>";
+		};
 		D0AC6C0A269BE63D0071E45D /* Async Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,8 +214,7 @@
 		D0BD25EB26960F4D00739AF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D0BD25EC26960F6900739AF9 /* Home.swift */,
-				D04F569F269B6E410004F323 /* MovieDetailView.swift */,
+				D074ACF92705A9F90015A52B /* screen */,
 				D041B1A226A092B80035D2A4 /* PeopleView.swift */,
 			);
 			path = View;

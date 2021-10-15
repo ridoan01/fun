@@ -15,7 +15,6 @@ struct Home: View {
 	@State var swiped = 0
 	
 	var body: some View {
-		
 		NavigationView{
 			ZStack {
 				Color(.secondarySystemBackground).ignoresSafeArea()
@@ -58,7 +57,6 @@ struct Home: View {
 								Card3()
 								
 							}.padding(.top, 8)
-							
 							
 							VStack{
 								HStack {
@@ -131,8 +129,6 @@ struct Home: View {
 	func getHeight(index : Int) -> CGFloat {
 		return height - (index - swiped < 3 ? CGFloat(index-swiped) * 40:80)
 	}
-	
-	
 }
 
 struct Home_Previews: PreviewProvider {
@@ -155,9 +151,7 @@ struct FeatureImages: View {
 	@State var index = 0
 	var body: some View {
 		
-		
 		HStack{
-			
 			TabView(selection: $index){
 				
 				ForEach(1...5,id: \.self){ idx in
@@ -220,27 +214,7 @@ class HomeViewModel: ObservableObject{
 
 
 
-struct MovieDetail : View{
-	@State var mID :  Int
-	
-	var body: some View{
-		VStack{
-			AsyncImage(url: URL(string: basePath+movies[mID].poster)!,
-					   placeholder: {Color.black},
-					   image: { image in
-						Image(uiImage: image)
-							.resizable()
-						
-					   })
-				.cornerRadius(12)
-			Text("ID : \(movies[mID].id)")
-			Text("Title : \(movies[mID].name)")
-		}
-		.offset(x: 0, y: -60)
-		
-	}
-	
-}
+
 
 struct Card1: View {
 	private  var width = UIScreen.main.bounds.width - 20
@@ -341,7 +315,7 @@ struct Card3: View {
 										   image: { image in
 											Image(uiImage: image)
 												.resizable()
-										
+											
 										   })
 									.frame(width: width, height: height, alignment: .center)
 									.aspectRatio(contentMode: .fit)
